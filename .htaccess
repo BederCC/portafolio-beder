@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # 1. Redirigir /index.php o /folder/index.php a la raíz correspondiente /
+    RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ (.*)/index\.php [NC]
+    RewriteRule ^index\.php$ %1/ [R=301,L]
+
+    # 2. Redirigir solicitudes externas con extensión .php a su URL limpia (sin .php)
+    RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
+    RewriteRule ^ %1 [R=301,L]
+
+    # 3. Reescribir internamente la URL limpia al archivo .php si existe
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME}.php -f
+    RewriteRule ^(.*)$ $1.php [L]
+</IfModule>
