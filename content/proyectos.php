@@ -13,22 +13,25 @@
     <!-- Bento Grid -->
     <div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 min-h-0 md:h-[60vh]">
         <!-- Main Project (Bento Large) -->
-        <div class="md:col-span-2 md:row-span-2 group relative bg-white/5 border border-white/10 rounded-3xl p-6 sm:p-8 overflow-hidden hover:border-rose-500/50 transition-all duration-500 min-h-[220px]">
+        <div class="md:col-span-2 md:row-span-2 group relative bg-white/5 border border-white/10 rounded-3xl p-6 sm:p-8 overflow-hidden hover:border-rose-500/50 transition-all duration-500 min-h-[260px]">
+            <!-- Imagen de captura de pantalla del proyecto (Colocar tu captura en assets/img/universidad-en-linea.jpg) -->
+            <div class="absolute inset-0 bg-cover bg-center opacity-25 group-hover:opacity-40 group-hover:scale-105 transition-all duration-700 pointer-events-none" style="background-image: url('assets/img/universidad-en-linea.png');"></div>
+            <!-- Degradado para mantener legibilidad del texto -->
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/70 to-slate-950/30 pointer-events-none"></div>
+
             <div class="relative z-10 h-full flex flex-col justify-between">
                 <div class="mb-6 md:mb-0">
-                    <p class="text-rose-500 font-mono text-[9px] mb-2 font-bold uppercase">Enterprise Case</p>
-                    <h4 class="text-xl sm:text-2xl font-black text-white mb-3 tracking-tight">Sistema Gestión <br> JV PERU</h4>
-                    <p class="text-slate-400 text-xs leading-relaxed max-w-xs">
-                        Arquitectura de gestión administrativa y control de inventarios de alta precisión.
+                    <p class="text-rose-500 font-mono text-[9px] mb-2 font-bold uppercase">Plataforma Web & Educación</p>
+                    <h4 class="text-xl sm:text-2xl font-black text-white mb-3 tracking-tight group-hover:text-rose-400 transition-colors">Universidad en Línea</h4>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed max-w-xs">
+                        Ecosistema educativo digital para la gestión académica, aulas virtuales y campus interactivo.
                     </p>
                 </div>
-                <div class="flex gap-2">
-                    <span class="px-3 py-1 bg-white/5 text-[9px] font-bold text-slate-400 rounded-lg border border-white/5">PHP</span>
-                    <span class="px-3 py-1 bg-white/5 text-[9px] font-bold text-slate-400 rounded-lg border border-white/5">SQL</span>
+                <div class="flex items-center gap-2">
+                    <span class="px-3 py-1 bg-white/10 text-[9px] font-bold text-slate-200 rounded-lg border border-white/10 backdrop-blur-md">PHP</span>
+                    <span class="px-3 py-1 bg-white/10 text-[9px] font-bold text-slate-200 rounded-lg border border-white/10 backdrop-blur-md">SQL</span>
+                    <span class="px-3 py-1 bg-white/10 text-[9px] font-bold text-slate-200 rounded-lg border border-white/10 backdrop-blur-md">Web</span>
                 </div>
-            </div>
-            <div class="absolute bottom-[-20%] right-[-10%] opacity-5 group-hover:opacity-10 transition-opacity pointer-events-none">
-                <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
             </div>
         </div>
 

@@ -18,14 +18,6 @@
             
             <!-- SECTION 1: INICIO -->
             <section id="inicio" class="min-h-[85vh] md:min-h-screen flex flex-col justify-center section-fade active snap-start py-8 md:py-0">
-                <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-2xl bg-white/5 border border-white/10 mb-8 sm:mb-10 w-fit backdrop-blur-md">
-                    <span class="relative flex h-2 w-2">
-                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-2 w-2 bg-sky-500"></span>
-                    </span>
-                    <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-[0.25em] sm:tracking-[0.3em] text-sky-400">Disponible para nuevos retos</span>
-                </div>
-
                 <h1 class="text-5xl sm:text-7xl md:text-[100px] font-black tracking-tighter text-white leading-[0.9] md:leading-[0.8] mb-8 sm:mb-10">
                     Hola, soy <br class="hidden sm:block"> <span class="text-sky-500 text-6xl sm:text-8xl md:text-[140px]">Beder.</span>
                 </h1>

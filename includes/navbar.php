@@ -46,13 +46,6 @@
     <a href="#inicio" class="text-white font-black text-xl tracking-tighter uppercase">
         Beder<span class="text-sky-500">.</span>
     </a>
-    <div class="flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10">
-        <span class="relative flex h-2 w-2">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-2 w-2 bg-sky-500"></span>
-        </span>
-        <span class="text-[9px] font-bold text-sky-400 uppercase tracking-widest">Disponible</span>
-    </div>
 </header>
 
 <!-- Mobile Navigation Bar (Modern Glass Floating Bar) -->
