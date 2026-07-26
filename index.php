@@ -5,32 +5,32 @@
     <!-- Designer Side Navbar -->
     <?php include 'includes/navbar.php'; ?>
 
-    <!-- Dynamic Content Area (Scroll Snapping Enabled) -->
-    <div class="flex-grow h-screen overflow-y-auto relative scroll-smooth bg-slate-950 snap-y snap-mandatory" id="content-scroller">
+    <!-- Dynamic Content Area (Scroll Snapping Enabled on Desktop) -->
+    <div class="flex-grow h-screen overflow-y-auto relative scroll-smooth bg-slate-950 md:snap-y md:snap-mandatory" id="content-scroller">
         
         <!-- Ambient Background Lights -->
         <div class="fixed inset-0 pointer-events-none">
-            <div class="absolute top-[20%] left-[10%] w-[500px] h-[500px] bg-sky-500/5 blur-[120px] rounded-full"></div>
-            <div class="absolute bottom-[10%] right-[10%] w-[400px] h-[400px] bg-indigo-500/5 blur-[100px] rounded-full"></div>
+            <div class="absolute top-[20%] left-[10%] w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] bg-sky-500/5 blur-[120px] rounded-full"></div>
+            <div class="absolute bottom-[10%] right-[10%] w-[250px] sm:w-[400px] h-[250px] sm:h-[400px] bg-indigo-500/5 blur-[100px] rounded-full"></div>
         </div>
 
-        <div class="max-w-6xl mx-auto pl-8 pr-8 md:pl-44 md:pr-12 py-12 relative z-10">
+        <div class="max-w-6xl mx-auto px-6 sm:px-10 md:pl-44 md:pr-12 pt-20 md:pt-12 pb-32 md:pb-12 relative z-10">
             
             <!-- SECTION 1: INICIO -->
-            <section id="inicio" class="min-h-screen flex flex-col justify-center section-fade active snap-start">
-                <div class="inline-flex items-center gap-3 px-4 py-2 rounded-2xl bg-white/5 border border-white/10 mb-10 w-fit backdrop-blur-md">
+            <section id="inicio" class="min-h-[85vh] md:min-h-screen flex flex-col justify-center section-fade active snap-start py-8 md:py-0">
+                <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-2xl bg-white/5 border border-white/10 mb-8 sm:mb-10 w-fit backdrop-blur-md">
                     <span class="relative flex h-2 w-2">
                         <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
                         <span class="relative inline-flex rounded-full h-2 w-2 bg-sky-500"></span>
                     </span>
-                    <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-sky-400">Disponible para nuevos retos</span>
+                    <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-[0.25em] sm:tracking-[0.3em] text-sky-400">Disponible para nuevos retos</span>
                 </div>
 
-                <h1 class="text-7xl md:text-[100px] font-black tracking-tighter text-white leading-[0.8] mb-10">
-                    Hola, soy <br class="hidden md:block"> <span class="text-sky-500 text-8xl md:text-[140px]">Beder.</span>
+                <h1 class="text-5xl sm:text-7xl md:text-[100px] font-black tracking-tighter text-white leading-[0.9] md:leading-[0.8] mb-8 sm:mb-10">
+                    Hola, soy <br class="hidden sm:block"> <span class="text-sky-500 text-6xl sm:text-8xl md:text-[140px]">Beder.</span>
                 </h1>
                 
-                <p class="text-xl md:text-2xl text-slate-400 max-w-2xl leading-relaxed font-light mb-12">
+                <p class="text-lg sm:text-xl md:text-2xl text-slate-400 max-w-2xl leading-relaxed font-light mb-10 sm:mb-12">
                     Especialista en <span class="text-white font-medium">Ingeniería de Sistemas</span> con enfoque en diseño de infraestructuras críticas y gestión de ecosistemas digitales.
                 </p>
 
@@ -43,30 +43,30 @@
             </section>
 
             <!-- SECTION 2: TRAYECTORIA -->
-            <section id="trayectoria" class="min-h-screen pt-12 snap-start flex flex-col justify-center">
+            <section id="trayectoria" class="min-h-[85vh] md:min-h-screen pt-8 md:pt-12 snap-start flex flex-col justify-center py-8 md:py-0">
                 <?php include 'content/experiencia.php'; ?>
             </section>
 
             <!-- SECTION 3: PROYECTOS -->
-            <section id="proyectos" class="min-h-screen pt-12 snap-start flex flex-col justify-center">
+            <section id="proyectos" class="min-h-[85vh] md:min-h-screen pt-8 md:pt-12 snap-start flex flex-col justify-center py-8 md:py-0">
                 <?php include 'content/proyectos.php'; ?>
             </section>
 
             <!-- SECTION 4: HABILIDADES -->
-            <section id="habilidades" class="min-h-screen pt-12 snap-start flex flex-col justify-center">
+            <section id="habilidades" class="min-h-[85vh] md:min-h-screen pt-8 md:pt-12 snap-start flex flex-col justify-center py-8 md:py-0">
                 <?php include 'content/habilidades.php'; ?>
             </section>
 
             <!-- SECTION 5: CONTACTO -->
-            <section id="contacto" class="min-h-screen pt-12 snap-start flex flex-col justify-center">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+            <section id="contacto" class="min-h-[85vh] md:min-h-screen pt-8 md:pt-12 snap-start flex flex-col justify-center py-8 md:py-0">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20">
                     <div>
-                        <h2 class="text-4xl font-black text-white mb-6 tracking-tighter">¿Listo para el <br> siguiente nivel?</h2>
-                        <p class="text-slate-400 mb-10 leading-relaxed">Disponible para consultorías estratégicas y desarrollo de proyectos de infraestructura de alta escala.</p>
-                        <a href="mailto:beder1810@gmail.com" class="text-sky-400 font-bold border-b border-sky-400/20 pb-2 hover:border-sky-400 transition-all text-2xl tracking-tighter">beder1810@gmail.com</a>
+                        <h2 class="text-3xl sm:text-4xl font-black text-white mb-4 sm:mb-6 tracking-tighter">¿Listo para el <br class="hidden sm:block"> siguiente nivel?</h2>
+                        <p class="text-slate-400 mb-8 sm:mb-10 text-sm sm:text-base leading-relaxed">Disponible para consultorías estratégicas y desarrollo de proyectos de infraestructura de alta escala.</p>
+                        <a href="mailto:beder1810@gmail.com" class="text-sky-400 font-bold border-b border-sky-400/20 pb-2 hover:border-sky-400 transition-all text-xl sm:text-2xl tracking-tighter break-all">beder1810@gmail.com</a>
                     </div>
-                    <div class="flex flex-col justify-end items-end gap-6">
-                        <div class="flex gap-10 text-[10px] font-bold uppercase tracking-[0.4em] text-slate-500">
+                    <div class="flex flex-col justify-start md:justify-end items-start md:items-end gap-6 pt-4 md:pt-0">
+                        <div class="flex flex-wrap gap-6 sm:gap-10 text-[10px] font-bold uppercase tracking-[0.4em] text-slate-500">
                             <a href="#" class="hover:text-white transition-colors">LinkedIn</a>
                             <a href="#" class="hover:text-white transition-colors">GitHub</a>
                             <a href="#" class="hover:text-white transition-colors">Instagram</a>
@@ -87,6 +87,16 @@
     #content-scroller::-webkit-scrollbar-track { background: transparent; }
     #content-scroller::-webkit-scrollbar-thumb { background: rgba(56, 189, 248, 0.2); border-radius: 10px; }
     #content-scroller::-webkit-scrollbar-thumb:hover { background: rgba(56, 189, 248, 0.5); }
+
+    /* Mobile Responsive Enhancements */
+    @media (max-width: 767px) {
+        #content-scroller {
+            scroll-snap-type: none !important;
+        }
+        .break-all {
+            word-break: break-all;
+        }
+    }
 
     /* Designer Section Fade */
     .section-fade {
