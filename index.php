@@ -21,19 +21,35 @@
             
             <!-- SECTION 1: INICIO -->
             <section id="inicio" class="min-h-[85vh] md:min-h-screen flex flex-col justify-center section-fade active snap-start py-8 md:py-0">
-                <h1 class="text-5xl sm:text-7xl md:text-[100px] font-black tracking-tighter text-white leading-[0.9] md:leading-[0.8] mb-8 sm:mb-10">
-                    Hola, soy <br class="hidden sm:block"> <span class="text-sky-500 text-6xl sm:text-8xl md:text-[140px]">Beder.</span>
-                </h1>
-                
-                <p class="text-lg sm:text-xl md:text-2xl text-slate-400 max-w-2xl leading-relaxed font-light mb-10 sm:mb-12">
-                    Especialista en <span class="text-white font-medium">Ingeniería de Sistemas</span> con enfoque en diseño de infraestructuras críticas y gestión de ecosistemas digitales.
-                </p>
+                <div class="hero-flex-wrapper">
+                    
+                    <!-- Columna de Texto (Izquierda) -->
+                    <div class="hero-text-column">
 
-                <div class="flex gap-8">
-                    <a href="#proyectos" class="group flex items-center gap-4 text-[10px] font-black uppercase tracking-[0.4em] text-white">
-                        Explorar Portafolio
-                        <div class="w-12 h-px bg-sky-500 group-hover:w-20 transition-all duration-500"></div>
-                    </a>
+                        <h1 class="text-5xl sm:text-6xl md:text-7xl xl:text-8xl font-black tracking-tighter text-white leading-[0.9] md:leading-[0.85] mb-6 sm:mb-8">
+                            Hola, soy <br class="hidden sm:block"> <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-sky-300 to-indigo-400">Beder.</span>
+                        </h1>
+                        
+                        <p class="text-base sm:text-lg md:text-xl text-slate-400 max-w-xl leading-relaxed font-light mb-8 sm:mb-10">
+                            Especialista en <span class="text-white font-medium">Ingeniería de Sistemas</span> con enfoque en diseño de infraestructuras críticas, desarrollo de sistemas web y gestión de ecosistemas digitales.
+                        </p>
+
+                        <div class="flex flex-wrap items-center gap-6 sm:gap-8">
+                            <a href="#proyectos" class="group flex items-center gap-4 text-[10px] font-black uppercase tracking-[0.4em] text-white hover:text-sky-400 transition-colors">
+                                Explorar Portafolio
+                                <div class="w-12 h-px bg-sky-500 group-hover:w-20 transition-all duration-500"></div>
+                            </a>
+                            <a href="#contacto" class="text-[10px] font-mono font-bold uppercase tracking-[0.3em] px-4 py-2 rounded-full border border-white/10 hover:border-sky-500/40 hover:bg-sky-500/5 text-slate-300 hover:text-white transition-all">
+                                Contactar
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Columna de Foto Circular Interactiva (Derecha) -->
+                    <div class="hero-photo-column">
+                        <?php include 'includes/profile_shader.php'; ?>
+                    </div>
+
                 </div>
             </section>
 
@@ -76,6 +92,37 @@
 
 <style>
     body { font-family: 'Outfit', sans-serif; }
+
+    /* Hero Flex layout - garantiza que la foto esté estrictamente a la DERECHA del texto */
+    .hero-flex-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 2.5rem;
+    }
+
+    @media (min-width: 900px) {
+        .hero-flex-wrapper {
+            flex-direction: row !important;
+            align-items: center !important;
+            justify-content: space-between !important;
+            gap: 2.5rem !important;
+        }
+        .hero-text-column {
+            flex: 1 1 56% !important;
+            max-width: 620px !important;
+            order: 1 !important;
+        }
+        .hero-photo-column {
+            flex: 0 0 auto !important;
+            display: flex !important;
+            justify-content: flex-end !important;
+            align-items: center !important;
+            order: 2 !important;
+        }
+    }
     
     /* Scrollbar Styling */
     #content-scroller::-webkit-scrollbar { width: 4px; }
