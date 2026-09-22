@@ -8,11 +8,14 @@
     <!-- Dynamic Content Area (Scroll Snapping Enabled on Desktop) -->
     <div class="flex-grow h-screen overflow-y-auto relative scroll-smooth bg-slate-950 md:snap-y md:snap-mandatory" id="content-scroller">
         
-        <!-- Ambient Background Lights -->
+        <!-- Ambient Background Lights & Fireflies Effect -->
         <div class="fixed inset-0 pointer-events-none">
             <div class="absolute top-[20%] left-[10%] w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] bg-sky-500/5 blur-[120px] rounded-full"></div>
             <div class="absolute bottom-[10%] right-[10%] w-[250px] sm:w-[400px] h-[250px] sm:h-[400px] bg-indigo-500/5 blur-[100px] rounded-full"></div>
         </div>
+
+        <!-- Módulo independiente de Luciérnagas (Eliminar este include para remover el efecto) -->
+        <?php include 'includes/fireflies.php'; ?>
 
         <div class="max-w-6xl mx-auto px-6 sm:px-10 md:pl-44 md:pr-12 pt-20 md:pt-12 pb-32 md:pb-12 relative z-10">
             
